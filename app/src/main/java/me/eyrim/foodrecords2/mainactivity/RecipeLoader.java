@@ -45,8 +45,7 @@ public class RecipeLoader {
                         "\t\"ingredients\": [\n" +
                         "\t\t\"Tomato\",\n" +
                         "\t\t\"Carrot\"\n" +
-                        "\t],\n" +
-                        "\t\"recipe_id\": \"00001\"\n" +
+                        "\t]\n" +
                 "}",
                 "{\n" +
                         "\t\"recipe_name\": \"My Test Recipe 2\",\n" +
@@ -55,8 +54,7 @@ public class RecipeLoader {
                         "\t\t\"Tomato\",\n" +
                         "\t\t\"Carrot\",\n" +
                         "\t\t\"Nightmares\"\n" +
-                        "\t],\n" +
-                        "\t\"recipe_id\": \"00002\"\n" +
+                        "\t]\n" +
                 "}"
         };
 
