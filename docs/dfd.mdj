@@ -1,0 +1,1525 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "DFDDataFlowModel",
+			"_id": "AAAAAAGECdfvmurQji8=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "DataFlowModel1",
+			"ownedElements": [
+				{
+					"_type": "DFDDiagram",
+					"_id": "AAAAAAGECdfvmurR/jg=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "DFDDiagram1",
+					"ownedViews": [
+						{
+							"_type": "DFDExternalEntityView",
+							"_id": "AAAAAAGECdg1Oerd+dM=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdg1Oeriuoc=",
+									"_parent": {
+										"$ref": "AAAAAAGECdg1Oerd+dM="
+									},
+									"font": "Arial;13;0",
+									"left": 618,
+									"top": 189,
+									"width": 87.4326171875,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdg1Oere+cc=",
+									"_parent": {
+										"$ref": "AAAAAAGECdg1Oerd+dM="
+									},
+									"font": "Arial;13;0",
+									"left": 618,
+									"top": 194,
+									"width": 87.4326171875,
+									"height": 13,
+									"text": "User",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdg1OerfxdQ=",
+									"_parent": {
+										"$ref": "AAAAAAGECdg1Oerd+dM="
+									},
+									"font": "Arial;13;0",
+									"left": -283,
+									"top": -95,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 608,
+							"top": 184,
+							"width": 107.4326171875,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGECdg1Oere+cc="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGECdh4Xerth0s=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdhr4+rpWc8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdh4XeruiRs=",
+									"_parent": {
+										"$ref": "AAAAAAGECdh4Xerth0s="
+									},
+									"font": "Arial;13;0",
+									"left": 626,
+									"top": 336,
+									"width": 76.578125,
+									"height": 13,
+									"text": "MainActivity",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdh4Xervx8Q=",
+									"_parent": {
+										"$ref": "AAAAAAGECdh4Xerth0s="
+									},
+									"font": "Arial;13;0",
+									"left": 626,
+									"top": 309,
+									"width": 76.578125,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 616,
+							"top": 304,
+							"width": 96.578125,
+							"height": 56,
+							"nameLabel": {
+								"$ref": "AAAAAAGECdh4XeruiRs="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGECdh4Xervx8Q="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECdjZVer/mrE=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdjZVer9tkw="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECdjZVusAx2M=",
+									"_parent": {
+										"$ref": "AAAAAAGECdjZVer/mrE="
+									},
+									"model": {
+										"$ref": "AAAAAAGECdjZVer9tkw="
+									},
+									"font": "Arial;13;0",
+									"left": 664,
+									"top": 253,
+									"width": 65.04443359375,
+									"height": 13,
+									"alpha": 1.5985667284054923,
+									"distance": 36.013886210738214,
+									"hostEdge": {
+										"$ref": "AAAAAAGECdjZVer/mrE="
+									},
+									"edgePosition": 1,
+									"text": "Opens App"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdh4Xerth0s="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdg1Oerd+dM="
+							},
+							"lineStyle": 2,
+							"points": "660:216;660:304",
+							"nameLabel": {
+								"$ref": "AAAAAAGECdjZVusAx2M="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGECdl9R+suStA=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdl9R+svOWE=",
+									"_parent": {
+										"$ref": "AAAAAAGECdl9R+suStA="
+									},
+									"font": "Arial;13;0",
+									"left": 602,
+									"top": 464,
+									"width": 116,
+									"height": 13,
+									"text": "RecipeLoader",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdl9R+swwr0=",
+									"_parent": {
+										"$ref": "AAAAAAGECdl9R+suStA="
+									},
+									"font": "Arial;13;0",
+									"left": 602,
+									"top": 437,
+									"width": 116,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 592,
+							"top": 432,
+							"width": 136,
+							"height": 80,
+							"nameLabel": {
+								"$ref": "AAAAAAGECdl9R+svOWE="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGECdl9R+swwr0="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECdmQN+s6P4w=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdmQN+s4XZk="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECdmQN+s7/74=",
+									"_parent": {
+										"$ref": "AAAAAAGECdmQN+s6P4w="
+									},
+									"model": {
+										"$ref": "AAAAAAGECdmQN+s4XZk="
+									},
+									"font": "Arial;13;0",
+									"left": 672,
+									"top": 388,
+									"width": 101.88623046875,
+									"height": 13,
+									"alpha": 1.5874611774615612,
+									"distance": 60.00833275470999,
+									"hostEdge": {
+										"$ref": "AAAAAAGECdmQN+s6P4w="
+									},
+									"edgePosition": 1,
+									"text": "RequestsRecipes"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdl9R+suStA="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdh4Xerth0s="
+							},
+							"lineStyle": 2,
+							"points": "662:359;662:432",
+							"nameLabel": {
+								"$ref": "AAAAAAGECdmQN+s7/74="
+							}
+						},
+						{
+							"_type": "DFDDataStoreView",
+							"_id": "AAAAAAGECdnbeOtJdQQ=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdnbeOtH78s="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdnbeOtKDhA=",
+									"_parent": {
+										"$ref": "AAAAAAGECdnbeOtJdQQ="
+									},
+									"font": "Arial;13;0",
+									"left": 404,
+									"top": 434,
+									"width": 98,
+									"height": 13,
+									"text": "Recipes.json",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdnbeOtLVdo=",
+									"_parent": {
+										"$ref": "AAAAAAGECdnbeOtJdQQ="
+									},
+									"font": "Arial;13;0",
+									"left": 389,
+									"top": 434,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 384,
+							"top": 424,
+							"width": 128,
+							"height": 88,
+							"nameLabel": {
+								"$ref": "AAAAAAGECdnbeOtKDhA="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGECdnbeOtLVdo="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECdnyaetVMsI=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdnyaetTuco="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECdnyaetWCfQ=",
+									"_parent": {
+										"$ref": "AAAAAAGECdnyaetVMsI="
+									},
+									"model": {
+										"$ref": "AAAAAAGECdnyaetTuco="
+									},
+									"font": "Arial;13;0",
+									"left": 540,
+									"top": 455,
+									"width": 20.95361328125,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGECdnyaetVMsI="
+									},
+									"edgePosition": 1,
+									"text": "Get"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdnbeOtJdQQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdl9R+suStA="
+							},
+							"lineStyle": 2,
+							"points": "592:446;511:446",
+							"nameLabel": {
+								"$ref": "AAAAAAGECdnyaetWCfQ="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECdpHcutgMOU=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdpHcete2VI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECdpHcuth09U=",
+									"_parent": {
+										"$ref": "AAAAAAGECdpHcutgMOU="
+									},
+									"model": {
+										"$ref": "AAAAAAGECdpHcete2VI="
+									},
+									"font": "Arial;13;0",
+									"left": 537,
+									"top": 496,
+									"width": 26.0126953125,
+									"height": 13,
+									"alpha": -1.6421030809202524,
+									"distance": 14.035668847618199,
+									"hostEdge": {
+										"$ref": "AAAAAAGECdpHcutgMOU="
+									},
+									"edgePosition": 1,
+									"text": "Post"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdl9R+suStA="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdnbeOtJdQQ="
+							},
+							"lineStyle": 2,
+							"points": "511:488;592:488",
+							"nameLabel": {
+								"$ref": "AAAAAAGECdpHcuth09U="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGECdqR1etu6OY=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdqR1etsuyk="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdqR1etvyco=",
+									"_parent": {
+										"$ref": "AAAAAAGECdqR1etu6OY="
+									},
+									"font": "Arial;13;0",
+									"left": 834,
+									"top": 464,
+									"width": 84,
+									"height": 13,
+									"text": "RecipeParser",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdqR1etw250=",
+									"_parent": {
+										"$ref": "AAAAAAGECdqR1etu6OY="
+									},
+									"font": "Arial;13;0",
+									"left": 834,
+									"top": 437,
+									"width": 84,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 824,
+							"top": 432,
+							"width": 104,
+							"height": 80,
+							"nameLabel": {
+								"$ref": "AAAAAAGECdqR1etvyco="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGECdqR1etw250="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECdqvrOt6pDI=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdqvrOt4bQU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECdqvrOt7qyE=",
+									"_parent": {
+										"$ref": "AAAAAAGECdqvrOt6pDI="
+									},
+									"model": {
+										"$ref": "AAAAAAGECdqvrOt4bQU="
+									},
+									"font": "Arial;13;0",
+									"left": 752,
+									"top": 450,
+									"width": 46.96630859375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGECdqvrOt6pDI="
+									},
+									"edgePosition": 1,
+									"text": "Recipes"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdqR1etu6OY="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdl9R+suStA="
+							},
+							"lineStyle": 2,
+							"points": "727:471;824:471",
+							"nameLabel": {
+								"$ref": "AAAAAAGECdqvrOt7qyE="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECdrZ5+uH4z0=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdrZ5+uFqZE="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECdrZ5+uIKp4=",
+									"_parent": {
+										"$ref": "AAAAAAGECdrZ5+uH4z0="
+									},
+									"model": {
+										"$ref": "AAAAAAGECdrZ5+uFqZE="
+									},
+									"font": "Arial;13;0",
+									"left": 759,
+									"top": 345,
+									"width": 78.5078125,
+									"height": 13,
+									"alpha": 0.22347663388458017,
+									"distance": 67.68308503607086,
+									"hostEdge": {
+										"$ref": "AAAAAAGECdrZ5+uH4z0="
+									},
+									"edgePosition": 1,
+									"text": "RecyclerView"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdh4Xerth0s="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdqR1etu6OY="
+							},
+							"lineStyle": 2,
+							"points": "864:432;864:336;712:336",
+							"nameLabel": {
+								"$ref": "AAAAAAGECdrZ5+uIKp4="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGECds/OuuUq3I=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECds/OuuSuZs="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECds/OuuVeVU=",
+									"_parent": {
+										"$ref": "AAAAAAGECds/OuuUq3I="
+									},
+									"font": "Arial;13;0",
+									"left": 362,
+									"top": 192,
+									"width": 104.76806640625,
+									"height": 13,
+									"text": "AddRecipeActivity",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECds/OuuWnWs=",
+									"_parent": {
+										"$ref": "AAAAAAGECds/OuuUq3I="
+									},
+									"font": "Arial;13;0",
+									"left": 362,
+									"top": 165,
+									"width": 104.76806640625,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 352,
+							"top": 160,
+							"width": 124.76806640625,
+							"height": 72,
+							"nameLabel": {
+								"$ref": "AAAAAAGECds/OuuVeVU="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGECds/OuuWnWs="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECdtZXuuh75s=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdtZXeufYLo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECdtZXuui96c=",
+									"_parent": {
+										"$ref": "AAAAAAGECdtZXuuh75s="
+									},
+									"model": {
+										"$ref": "AAAAAAGECdtZXeufYLo="
+									},
+									"font": "Arial;13;0",
+									"left": 490,
+									"top": 217,
+									"width": 103.34619140625,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGECdtZXuuh75s="
+									},
+									"edgePosition": 1,
+									"text": "Add recipe Button"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECds/OuuUq3I="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdg1Oerd+dM="
+							},
+							"lineStyle": 2,
+							"points": "608:208;476:208",
+							"nameLabel": {
+								"$ref": "AAAAAAGECdtZXuui96c="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGECdzrjOvCgB8=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECdzrjOvAKVM="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdzrjOvDllM=",
+									"_parent": {
+										"$ref": "AAAAAAGECdzrjOvCgB8="
+									},
+									"font": "Arial;13;0",
+									"left": 178,
+									"top": 192,
+									"width": 83.814453125,
+									"height": 13,
+									"text": "RecipeCreator",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECdzrjOvEggI=",
+									"_parent": {
+										"$ref": "AAAAAAGECdzrjOvCgB8="
+									},
+									"font": "Arial;13;0",
+									"left": 178,
+									"top": 165,
+									"width": 83.814453125,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 168,
+							"top": 160,
+							"width": 103.814453125,
+							"height": 72,
+							"nameLabel": {
+								"$ref": "AAAAAAGECdzrjOvDllM="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGECdzrjOvEggI="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECd0MtuvOCPg=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECd0MtuvMHko="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECd0MtuvPvPc=",
+									"_parent": {
+										"$ref": "AAAAAAGECd0MtuvOCPg="
+									},
+									"model": {
+										"$ref": "AAAAAAGECd0MtuvMHko="
+									},
+									"font": "Arial;13;0",
+									"left": 302,
+									"top": 204,
+									"width": 17.341796875,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGECd0MtuvOCPg="
+									},
+									"edgePosition": 1,
+									"text": "Init"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdzrjOvCgB8="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECds/OuuUq3I="
+							},
+							"lineStyle": 2,
+							"points": "352:195;271:195",
+							"nameLabel": {
+								"$ref": "AAAAAAGECd0MtuvPvPc="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECd0fWOvYsvk=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECd0fWOvW/vw="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECd0fWOvZboc=",
+									"_parent": {
+										"$ref": "AAAAAAGECd0fWOvYsvk="
+									},
+									"model": {
+										"$ref": "AAAAAAGECd0fWOvW/vw="
+									},
+									"font": "Arial;13;0",
+									"left": 407,
+									"top": 111,
+									"width": 72.99169921875,
+									"height": 13,
+									"alpha": -1.1071481463656823,
+									"distance": 15.652475842498529,
+									"hostEdge": {
+										"$ref": "AAAAAAGECd0fWOvYsvk="
+									},
+									"edgePosition": 1,
+									"text": "Request info"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdg1Oerd+dM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdzrjOvCgB8="
+							},
+							"lineStyle": 2,
+							"points": "240:160;240:104;632:104;632:184",
+							"nameLabel": {
+								"$ref": "AAAAAAGECd0fWOvZboc="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECd1aZOvmXGY=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECd1aY+vkIVo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECd1aZOvney4=",
+									"_parent": {
+										"$ref": "AAAAAAGECd1aZOvmXGY="
+									},
+									"model": {
+										"$ref": "AAAAAAGECd1aY+vkIVo="
+									},
+									"font": "Arial;13;0",
+									"left": 411,
+									"top": 57,
+									"width": 65.76171875,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGECd1aZOvmXGY="
+									},
+									"edgePosition": 1,
+									"text": "Recipe Info"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdzrjOvCgB8="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdg1Oerd+dM="
+							},
+							"lineStyle": 2,
+							"points": "696:184;696:48;192:48;192:160",
+							"nameLabel": {
+								"$ref": "AAAAAAGECd1aZOvney4="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECd3IBOv02k8=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECd3IA+vyqlA="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECd3IBOv1edo=",
+									"_parent": {
+										"$ref": "AAAAAAGECd3IBOv02k8="
+									},
+									"model": {
+										"$ref": "AAAAAAGECd3IA+vyqlA="
+									},
+									"font": "Arial;13;0",
+									"left": 134,
+									"top": 399,
+									"width": 68.64990234375,
+									"height": 13,
+									"alpha": -4.0210521539441,
+									"distance": 75.28612089887484,
+									"hostEdge": {
+										"$ref": "AAAAAAGECd3IBOv02k8="
+									},
+									"edgePosition": 1,
+									"text": "Save recipe"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdnbeOtJdQQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdzrjOvCgB8="
+							},
+							"lineStyle": 2,
+							"points": "216:231;216:464;384:464",
+							"nameLabel": {
+								"$ref": "AAAAAAGECd3IBOv1edo="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGECd6LuewBYNw=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECd6LuOv/K7Y="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECd6LuewCqNQ=",
+									"_parent": {
+										"$ref": "AAAAAAGECd6LuewBYNw="
+									},
+									"font": "Arial;13;0",
+									"left": 866,
+									"top": 200,
+									"width": 109,
+									"height": 13,
+									"text": "EditRecipeActivity",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECd6LuewDDYk=",
+									"_parent": {
+										"$ref": "AAAAAAGECd6LuewBYNw="
+									},
+									"font": "Arial;13;0",
+									"left": 866,
+									"top": 173,
+									"width": 109,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 856,
+							"top": 168,
+							"width": 129,
+							"height": 57,
+							"nameLabel": {
+								"$ref": "AAAAAAGECd6LuewCqNQ="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGECd6LuewDDYk="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECd7HkOwR18M=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECd7HkOwP4bg="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECd7HkOwSvsM=",
+									"_parent": {
+										"$ref": "AAAAAAGECd7HkOwR18M="
+									},
+									"model": {
+										"$ref": "AAAAAAGECd7HkOwP4bg="
+									},
+									"font": "Arial;13;0",
+									"left": 732,
+									"top": 208,
+									"width": 101.17529296875,
+									"height": 13,
+									"alpha": -1.768191245619054,
+									"distance": 15.297058540778355,
+									"hostEdge": {
+										"$ref": "AAAAAAGECd7HkOwR18M="
+									},
+									"edgePosition": 1,
+									"text": "Edit recipe button"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECd6LuewBYNw="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdg1Oerd+dM="
+							},
+							"lineStyle": 2,
+							"points": "714:199;856:199",
+							"nameLabel": {
+								"$ref": "AAAAAAGECd7HkOwSvsM="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECd+7c+wdmog=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECd+7cewbTX4="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECd+7c+wejG0=",
+									"_parent": {
+										"$ref": "AAAAAAGECd+7c+wdmog="
+									},
+									"model": {
+										"$ref": "AAAAAAGECd+7cewbTX4="
+									},
+									"font": "Arial;13;0",
+									"left": 764,
+									"top": 577,
+									"width": 126.46435546875,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGECd+7c+wdmog="
+									},
+									"edgePosition": 1,
+									"text": "Request recipe to edit"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdl9R+suStA="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECd6LuewBYNw="
+							},
+							"lineStyle": 2,
+							"points": "952:224;952:568;704:568;704:511",
+							"nameLabel": {
+								"$ref": "AAAAAAGECd+7c+wejG0="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECeAAVOwshQ8=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECeAAVOwq6Ls="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECeAAVOwt9o0=",
+									"_parent": {
+										"$ref": "AAAAAAGECeAAVOwshQ8="
+									},
+									"model": {
+										"$ref": "AAAAAAGECeAAVOwq6Ls="
+									},
+									"font": "Arial;13;0",
+									"left": 775,
+									"top": 632,
+									"width": 104.05712890625,
+									"height": 13,
+									"alpha": -4.6384499138288735,
+									"distance": 189.51780918953236,
+									"hostEdge": {
+										"$ref": "AAAAAAGECeAAVOwshQ8="
+									},
+									"edgePosition": 1,
+									"text": "Post recipe to edit"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECd6LuewBYNw="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECdl9R+suStA="
+							},
+							"lineStyle": 2,
+							"points": "624:511;624:624;1016:624;1016:200;984:200",
+							"nameLabel": {
+								"$ref": "AAAAAAGECeAAVOwt9o0="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGECeCWduw/NS8=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECeCWdew9rug="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECeCWduxAyIw=",
+									"_parent": {
+										"$ref": "AAAAAAGECeCWduw/NS8="
+									},
+									"font": "Arial;13;0",
+									"left": 874,
+									"top": 80,
+									"width": 86.7216796875,
+									"height": 13,
+									"text": "EditIngredients",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGECeCWduxB0hg=",
+									"_parent": {
+										"$ref": "AAAAAAGECeCWduw/NS8="
+									},
+									"font": "Arial;13;0",
+									"left": 874,
+									"top": 53,
+									"width": 86.7216796875,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 864,
+							"top": 48,
+							"width": 106.7216796875,
+							"height": 56,
+							"nameLabel": {
+								"$ref": "AAAAAAGECeCWduxAyIw="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGECeCWduxB0hg="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECeDYU+xNGZ4=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECeDYUuxLtuI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECeDYU+xOkMU=",
+									"_parent": {
+										"$ref": "AAAAAAGECeDYU+xNGZ4="
+									},
+									"model": {
+										"$ref": "AAAAAAGECeDYUuxLtuI="
+									},
+									"font": "Arial;13;0",
+									"left": 918,
+									"top": 127,
+									"width": 122.865234375,
+									"height": 13,
+									"alpha": -1.554924333821998,
+									"distance": 63.00793600809346,
+									"hostEdge": {
+										"$ref": "AAAAAAGECeDYU+xNGZ4="
+									},
+									"edgePosition": 1,
+									"text": "Edit ingredient button"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECeCWduw/NS8="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECd6LuewBYNw="
+							},
+							"lineStyle": 2,
+							"points": "917:168;917:103",
+							"nameLabel": {
+								"$ref": "AAAAAAGECeDYU+xOkMU="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGECeEfuuxYl5A=",
+							"_parent": {
+								"$ref": "AAAAAAGECdfvmurR/jg="
+							},
+							"model": {
+								"$ref": "AAAAAAGECeEfuexWpW8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGECeEfuuxZzlo=",
+									"_parent": {
+										"$ref": "AAAAAAGECeEfuuxYl5A="
+									},
+									"model": {
+										"$ref": "AAAAAAGECeEfuexWpW8="
+									},
+									"font": "Arial;13;0",
+									"left": 775,
+									"top": 705,
+									"width": 80.93896484375,
+									"height": 13,
+									"alpha": 0.05333016833446136,
+									"distance": 281.40007107319644,
+									"hostEdge": {
+										"$ref": "AAAAAAGECeEfuuxYl5A="
+									},
+									"edgePosition": 1,
+									"text": "Update recipe"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGECdnbeOtJdQQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAGECeCWduw/NS8="
+							},
+							"lineStyle": 2,
+							"points": "970:80;1096:80;1096:696;448:696;448:511",
+							"nameLabel": {
+								"$ref": "AAAAAAGECeEfuuxZzlo="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGECdgpTerZdEo=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "User",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECdjZVer9tkw=",
+							"_parent": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"name": "Opens App",
+							"source": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdhr4+rpWc8="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECdtZXeufYLo=",
+							"_parent": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"name": "Add recipe Button",
+							"source": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"target": {
+								"$ref": "AAAAAAGECds/OuuSuZs="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECd1aY+vkIVo=",
+							"_parent": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"name": "Recipe Info",
+							"source": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdzrjOvAKVM="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECd7HkOwP4bg=",
+							"_parent": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"name": "Edit recipe button",
+							"source": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							},
+							"target": {
+								"$ref": "AAAAAAGECd6LuOv/K7Y="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGECdhr4+rpWc8=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "MainActivity",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECdmQN+s4XZk=",
+							"_parent": {
+								"$ref": "AAAAAAGECdhr4+rpWc8="
+							},
+							"name": "RequestsRecipes",
+							"source": {
+								"$ref": "AAAAAAGECdhr4+rpWc8="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGECdl9R+sskfE=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "RecipeLoader",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECdnyaetTuco=",
+							"_parent": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							},
+							"name": "Get",
+							"source": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdnbeOtH78s="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECdqvrOt4bQU=",
+							"_parent": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							},
+							"name": "Recipes",
+							"source": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdqR1etsuyk="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECeAAVOwq6Ls=",
+							"_parent": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							},
+							"name": "Post recipe to edit",
+							"source": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							},
+							"target": {
+								"$ref": "AAAAAAGECd6LuOv/K7Y="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDDataStore",
+					"_id": "AAAAAAGECdnbeOtH78s=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "Recipes.json",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECdpHcete2VI=",
+							"_parent": {
+								"$ref": "AAAAAAGECdnbeOtH78s="
+							},
+							"name": "Post",
+							"source": {
+								"$ref": "AAAAAAGECdnbeOtH78s="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGECdqR1etsuyk=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "RecipeParser",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECdrZ5+uFqZE=",
+							"_parent": {
+								"$ref": "AAAAAAGECdqR1etsuyk="
+							},
+							"name": "RecyclerView",
+							"source": {
+								"$ref": "AAAAAAGECdqR1etsuyk="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdhr4+rpWc8="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGECds/OuuSuZs=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "AddRecipeActivity",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECd0MtuvMHko=",
+							"_parent": {
+								"$ref": "AAAAAAGECds/OuuSuZs="
+							},
+							"name": "Init",
+							"source": {
+								"$ref": "AAAAAAGECds/OuuSuZs="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdzrjOvAKVM="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGECdzrjOvAKVM=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "RecipeCreator",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECd0fWOvW/vw=",
+							"_parent": {
+								"$ref": "AAAAAAGECdzrjOvAKVM="
+							},
+							"name": "Request info",
+							"source": {
+								"$ref": "AAAAAAGECdzrjOvAKVM="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdgpTerZdEo="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECd3IA+vyqlA=",
+							"_parent": {
+								"$ref": "AAAAAAGECdzrjOvAKVM="
+							},
+							"name": "Save recipe",
+							"source": {
+								"$ref": "AAAAAAGECdzrjOvAKVM="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdnbeOtH78s="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGECd6LuOv/K7Y=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "EditRecipeActivity",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECd+7cewbTX4=",
+							"_parent": {
+								"$ref": "AAAAAAGECd6LuOv/K7Y="
+							},
+							"name": "Request recipe to edit",
+							"source": {
+								"$ref": "AAAAAAGECd6LuOv/K7Y="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdl9R+sskfE="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECeDYUuxLtuI=",
+							"_parent": {
+								"$ref": "AAAAAAGECd6LuOv/K7Y="
+							},
+							"name": "Edit ingredient button",
+							"source": {
+								"$ref": "AAAAAAGECd6LuOv/K7Y="
+							},
+							"target": {
+								"$ref": "AAAAAAGECeCWdew9rug="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGECeCWdew9rug=",
+					"_parent": {
+						"$ref": "AAAAAAGECdfvmurQji8="
+					},
+					"name": "EditIngredients",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGECeEfuexWpW8=",
+							"_parent": {
+								"$ref": "AAAAAAGECeCWdew9rug="
+							},
+							"name": "Update recipe",
+							"source": {
+								"$ref": "AAAAAAGECeCWdew9rug="
+							},
+							"target": {
+								"$ref": "AAAAAAGECdnbeOtH78s="
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
