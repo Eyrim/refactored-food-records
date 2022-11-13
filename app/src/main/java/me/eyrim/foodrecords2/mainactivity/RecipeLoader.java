@@ -1,6 +1,9 @@
 package me.eyrim.foodrecords2.mainactivity;
 
 import android.content.Context;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -13,6 +16,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import kotlin.NotImplementedError;
 import me.eyrim.foodrecords2.FileHandling;
 import me.eyrim.foodrecords2.Recipe;
 
@@ -33,8 +37,9 @@ public class RecipeLoader {
     public static Recipe getRecipeFromId(String recipeId) {
         Recipe recipe = null;
 
+        throw new NotImplementedError();
 
-        return recipe;
+        //return recipe;
     }
 
     private static void insertTestFiles(Context context) {
@@ -47,7 +52,7 @@ public class RecipeLoader {
                         "\t\t\"Carrot\"\n" +
                         "\t],\n" +
                         "\t\"recipe_id\": \"00001\"\n" +
-                "}",
+                "},",
                 "{\n" +
                         "\t\"recipe_name\": \"My Test Recipe 2\",\n" +
                         "\t\"recipe_desc\": \"aaaaaaaaaaaaaaaaa\",\n" +
@@ -75,7 +80,7 @@ public class RecipeLoader {
      * @return Recipe[] containing the serialised form of every recipe.json file<br\>Or null if an error was encountered
      */
     private static Recipe[] loadRecipesFromJson() {
-        Gson gson = new GsonBuilder().serializeNulls().create();
+        /*Gson gson = new GsonBuilder().serializeNulls().create();
         Recipe[] recipes;
 
         try {
@@ -89,6 +94,23 @@ public class RecipeLoader {
             }
         } catch (Exception e) {
             // Print the exception details
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+            return null;
+        }
+
+        return recipes;*/
+
+        Recipe[] recipes;
+
+        try {
+            // Get every recipe from the file
+            String json = FileHandling.readFileToString(baseFilePath + File.separatorChar + "recipes.json");
+            Gson gson = new GsonBuilder().serializeNulls().create();
+
+            recipes =
+        } catch (Exception e) {
+            // Print exception details
             System.out.println(e.getMessage());
             e.printStackTrace();
             return null;
