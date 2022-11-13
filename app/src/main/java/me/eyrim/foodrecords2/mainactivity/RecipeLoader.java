@@ -60,13 +60,8 @@ public class RecipeLoader {
                 "}"
         };
 
-        try (FileOutputStream fos = context.openFileOutput("recipe1.json", Context.MODE_PRIVATE)) {
+        try (FileOutputStream fos = context.openFileOutput("recipes.json", Context.MODE_PRIVATE)) {
             fos.write(json[0].getBytes());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        try (FileOutputStream fos = context.openFileOutput("recipe2.json", Context.MODE_PRIVATE)) {
             fos.write(json[1].getBytes());
         } catch (Exception e) {
             e.printStackTrace();
