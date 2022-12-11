@@ -1,6 +1,7 @@
 package me.eyrim.foodrecords2.mainactivity
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.core.view.marginBottom
 import me.eyrim.foodrecords2.Recipe
 import androidx.recyclerview.widget.RecyclerView
 import me.eyrim.foodrecords2.R
+import me.eyrim.foodrecords2.recipeviewactivity.RecipeViewActivity
 
 class RecyclerViewAdapterMain(context: Context, recipes: Array<Recipe>): RecyclerView.Adapter<RecyclerViewAdapterMain.ViewHolder>() {
     private val context: Context;
@@ -26,14 +28,27 @@ class RecyclerViewAdapterMain(context: Context, recipes: Array<Recipe>): Recycle
         var recipeDesc: TextView;
         // A bodged text view as a background
         var background: TextView;
+        // The id of the recipe
+            // This text view is invisible, it only exists to act as a primary key to find the requested recipe from a file
+        var recipeId: TextView;
 
         init {
             recipeName = itemView.findViewById(R.id.record_name_text_view);
             recipeDesc = itemView.findViewById(R.id.record_desc_text_view);
             background = itemView.findViewById(R.id.background_color);
+            recipeId = itemView.findViewById(R.id.record_id_text_view);
 
-            // Hide the button, but still allow the user to click it
-            itemView.findViewById<Button?>(R.id.click_recipe_button).setBackgroundColor(Color.TRANSPARENT);
+
+            itemView.isClickable = true;
+            itemView.setOnClickListener { it: View ->
+                // Gets the recipe id
+                val recipeId: String = it.findViewById<TextView>(R.id.record_id_text_view).text as String;
+                // Gets the recipe from the id
+                //val recipe: Recipe = RecipeLoader.getRecipeFromId(recipeId);
+
+                // Change to recipe view activity and attach the recipe id so the correct recipe can be loaded
+                val intent: Intent = Intent(context, RecipeViewActivity::class.java);
+            }
         }
     }
 

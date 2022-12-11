@@ -11,6 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import me.eyrim.foodrecords2.FileHandling;
@@ -30,9 +31,27 @@ public class RecipeLoader {
         return loadRecipesFromJson();
     }
 
+    // TODO: 13/11/2022 Refactor 
     public static Recipe getRecipeFromId(String recipeId) {
-        Recipe recipe = null;
+        Recipe recipe;
+        String[] allPaths;
+        Gson gson = new GsonBuilder().serializeNulls().create();
 
+        try {
+            allPaths = getRecipePaths();
+            // If the requested recipe exists
+            if (Arrays.asList(allPaths).contains(recipeId + ".json")) {
+                // Convert the file to a recipe object
+                recipe = gson.fromJson(FileHandling.readFileToString(recipeId + ".json"), Recipe.class);
+            } else { // If the recipe didn't exist, then throw an exception. This will be immediately managed by the catch clause
+                throw new FileNotFoundException("Requested recipe ID: " + recipeId + " not found");
+            }
+        } catch (Exception e) {
+            // Print exception details
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+            return null;
+        }
 
         return recipe;
     }
@@ -58,13 +77,13 @@ public class RecipeLoader {
                 "}"
         };
 
-        try (FileOutputStream fos = context.openFileOutput("recipe1.json", Context.MODE_PRIVATE)) {
+        try (FileOutputStream fos = context.openFileOutput("00000001.json", Context.MODE_PRIVATE)) {
             fos.write(json[0].getBytes());
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        try (FileOutputStream fos = context.openFileOutput("recipe2.json", Context.MODE_PRIVATE)) {
+        try (FileOutputStream fos = context.openFileOutput("00000002.json", Context.MODE_PRIVATE)) {
             fos.write(json[1].getBytes());
         } catch (Exception e) {
             e.printStackTrace();
@@ -106,7 +125,7 @@ public class RecipeLoader {
      * @return String[] containing the absolute paths of any json files under the base directory
      * @throws IOException If the base directory does not exist. Invocation of this exception will create the directory
      */
-    private static String[] getRecipePaths() throws IOException {
+    public static String[] getRecipePaths() throws IOException {
         File baseDir = new File(baseFilePath);
         File[] children;
         List<String> recipes = new ArrayList<>(10);
