@@ -16,7 +16,7 @@ import me.eyrim.foodrecords2.Recipe;
  */
 public class RecipeManager {
     public static void saveRecipe(Recipe recipe, Context context) {
-        try (FileOutputStream fos = context.openFileOutput(RecipeLoader.getRecipePaths().length + ".json", Context.MODE_PRIVATE)) {
+        try (FileOutputStream fos = context.openFileOutput(RecipeLoader.getRecipePaths(false).length + ".json", Context.MODE_PRIVATE)) {
             // Gson to convert obj to json
             Gson gson = new GsonBuilder().serializeNulls().create();
             // Get the json rep of the recipe passed in

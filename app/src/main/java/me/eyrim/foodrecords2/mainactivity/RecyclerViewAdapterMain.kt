@@ -43,11 +43,13 @@ class RecyclerViewAdapterMain(context: Context, recipes: Array<Recipe>): Recycle
             itemView.setOnClickListener { it: View ->
                 // Gets the recipe id
                 val recipeId: String = it.findViewById<TextView>(R.id.record_id_text_view).text as String;
-                // Gets the recipe from the id
-                //val recipe: Recipe = RecipeLoader.getRecipeFromId(recipeId);
 
                 // Change to recipe view activity and attach the recipe id so the correct recipe can be loaded
                 val intent: Intent = Intent(context, RecipeViewActivity::class.java);
+                // Add the id so it can be loaded
+                intent.putExtra("id", recipeId);
+
+                context.startActivity(intent);
             }
         }
     }
@@ -62,6 +64,7 @@ class RecyclerViewAdapterMain(context: Context, recipes: Array<Recipe>): Recycle
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.recipeName.text = recipes[position].recipeName;
         holder.recipeDesc.text = recipes[position].recipeDesc;
+        holder.recipeId.text = recipes[position].recipeId;
 
         if (position % 2 == 0) {
             // Lighter grey

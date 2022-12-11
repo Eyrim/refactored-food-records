@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -28,21 +27,21 @@ public class RecipeLoader {
             insertTestFiles(context);
         }
 
-        return loadRecipesFromJson();
+        return loadRecipesFromJson(context);
     }
 
     // TODO: 13/11/2022 Refactor 
-    public static Recipe getRecipeFromId(String recipeId) {
+    public static Recipe getRecipeFromId(String recipeId, Context context) {
         Recipe recipe;
         String[] allPaths;
         Gson gson = new GsonBuilder().serializeNulls().create();
 
         try {
-            allPaths = getRecipePaths();
+            allPaths = getRecipePaths(true);
             // If the requested recipe exists
             if (Arrays.asList(allPaths).contains(recipeId + ".json")) {
                 // Convert the file to a recipe object
-                recipe = gson.fromJson(FileHandling.readFileToString(recipeId + ".json"), Recipe.class);
+                recipe = gson.fromJson(FileHandling.readFileToString(baseFilePath + recipeId + ".json", context), Recipe.class);
             } else { // If the recipe didn't exist, then throw an exception. This will be immediately managed by the catch clause
                 throw new FileNotFoundException("Requested recipe ID: " + recipeId + " not found");
             }
@@ -60,6 +59,7 @@ public class RecipeLoader {
         String[] json = new String[] {
                 "{\n" +
                         "\t\"recipe_name\": \"My Test Recipe 1\",\n" +
+                        "\t\"recipe_id\": \"0\",\n" +
                         "\t\"recipe_desc\": \"This is a test description for My Test Recipe 1\",\n" +
                         "\t\"ingredients\": [\n" +
                         "\t\t\"Tomato\",\n" +
@@ -68,6 +68,7 @@ public class RecipeLoader {
                 "}",
                 "{\n" +
                         "\t\"recipe_name\": \"My Test Recipe 2\",\n" +
+                        "\t\"recipe_id\": \"1\",\n" +
                         "\t\"recipe_desc\": \"aaaaaaaaaaaaaaaaa\",\n" +
                         "\t\"ingredients\": [\n" +
                         "\t\t\"Tomato\",\n" +
@@ -77,13 +78,13 @@ public class RecipeLoader {
                 "}"
         };
 
-        try (FileOutputStream fos = context.openFileOutput("00000001.json", Context.MODE_PRIVATE)) {
+        try (FileOutputStream fos = context.openFileOutput("0.json", Context.MODE_PRIVATE)) {
             fos.write(json[0].getBytes());
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        try (FileOutputStream fos = context.openFileOutput("00000002.json", Context.MODE_PRIVATE)) {
+        try (FileOutputStream fos = context.openFileOutput("1.json", Context.MODE_PRIVATE)) {
             fos.write(json[1].getBytes());
         } catch (Exception e) {
             e.printStackTrace();
@@ -96,18 +97,18 @@ public class RecipeLoader {
      * Read it as a recipe.
      * @return Recipe[] containing the serialised form of every recipe.json file<br\>Or null if an error was encountered
      */
-    private static Recipe[] loadRecipesFromJson() {
+    private static Recipe[] loadRecipesFromJson(Context context) {
         Gson gson = new GsonBuilder().serializeNulls().create();
         Recipe[] recipes;
 
         try {
             // Get every recipe file path in array
-            String[] recipePaths = getRecipePaths();
+            String[] recipePaths = getRecipePaths(false);
             recipes = new Recipe[recipePaths.length];
 
             for (int i = 0; i < recipes.length; i++) {
                 // Serialise the recipe as a Recipe object and add it to the array
-                recipes[i] = gson.fromJson(FileHandling.readFileToString(recipePaths[i]), Recipe.class);
+                recipes[i] = gson.fromJson(FileHandling.readFileToString(recipePaths[i], context), Recipe.class);
             }
         } catch (Exception e) {
             // Print the exception details
@@ -125,7 +126,7 @@ public class RecipeLoader {
      * @return String[] containing the absolute paths of any json files under the base directory
      * @throws IOException If the base directory does not exist. Invocation of this exception will create the directory
      */
-    public static String[] getRecipePaths() throws IOException {
+    public static String[] getRecipePaths(boolean splitted) throws IOException {
         File baseDir = new File(baseFilePath);
         File[] children;
         List<String> recipes = new ArrayList<>(10);
@@ -154,6 +155,19 @@ public class RecipeLoader {
                     recipes.add(file.getAbsolutePath());
                 }
             }
+        }
+
+        // TODO: 11/12/2022 Desperately needs a refactor
+        if (splitted) {
+            String[] recipesSplit = new String[recipes.size()];
+            String[] current = null;
+
+            for (int i = 0; i < recipes.size(); i++) {
+                current = recipes.get(i).split("/");
+                recipesSplit[i] = current[current.length - 1];
+            }
+
+            return recipesSplit;
         }
 
         // Return the recipes as a static array
