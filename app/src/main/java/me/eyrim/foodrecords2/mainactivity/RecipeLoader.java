@@ -14,6 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import me.eyrim.foodrecords2.FileHandling;
+import me.eyrim.foodrecords2.R;
 import me.eyrim.foodrecords2.Recipe;
 
 public class RecipeLoader {
@@ -63,11 +64,11 @@ public class RecipeLoader {
                         "\t\"recipe_desc\": \"This is a test desc for my test recipe 1 updated\",\n" +
                         "\t\"ingredients\": [{\n" +
                         "\t\t\t\"ingredient_name\": \"Tomato\",\n" +
-                        "\t\t\t\"ingredient_drawable_tag\": 1234034598\n" +
+                        "\t\t\t\"ingredient_drawable_tag\": 700003\n" +
                         "\t\t},\n" +
                         "\t\t{\n" +
                         "\t\t\t\"ingredient_name\": \"Pepper\",\n" +
-                        "\t\t\t\"ingredient_drawable_tag\": 79827392\n" +
+                        "\t\t\t\"ingredient_drawable_tag\": 700002\n" +
                         "\t\t}\n" +
                         "\t]\n" +
                         "}"

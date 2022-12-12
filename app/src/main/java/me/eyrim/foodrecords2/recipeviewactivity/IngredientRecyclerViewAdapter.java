@@ -1,5 +1,6 @@
 package me.eyrim.foodrecords2.recipeviewactivity;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,12 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import me.eyrim.foodrecords2.Ingredient;
 import me.eyrim.foodrecords2.R;
 
 public class IngredientRecyclerViewAdapter extends RecyclerView.Adapter<IngredientRecyclerViewAdapter.IngredientViewHolder> {
-    private int[] ingredients;
+    private final Ingredient[] ingredients;
 
-    public IngredientRecyclerViewAdapter(int[] ingredients) {
+    public IngredientRecyclerViewAdapter(Ingredient[] ingredients, Context context) {
         this.ingredients = ingredients;
     }
 
@@ -28,7 +30,9 @@ public class IngredientRecyclerViewAdapter extends RecyclerView.Adapter<Ingredie
 
     @Override
     public void onBindViewHolder(@NonNull IngredientViewHolder holder, int position) {
-        holder.imageView.setImageResource(this.ingredients[position]);
+        //imageView.setImageResource(this.ingredients[position]);
+
+        holder.imageView.setImageResource(this.ingredients[position].getIngredientDrawableTag());
     }
 
     @Override
@@ -37,7 +41,7 @@ public class IngredientRecyclerViewAdapter extends RecyclerView.Adapter<Ingredie
     }
 
     public class IngredientViewHolder extends RecyclerView.ViewHolder {
-        private ImageView imageView;
+        private final ImageView imageView;
 
         public IngredientViewHolder(@NonNull View itemView) {
             super(itemView);
