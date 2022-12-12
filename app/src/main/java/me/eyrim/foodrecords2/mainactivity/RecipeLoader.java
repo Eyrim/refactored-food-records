@@ -41,7 +41,7 @@ public class RecipeLoader {
             // If the requested recipe exists
             if (Arrays.asList(allPaths).contains(recipeId + ".json")) {
                 // Convert the file to a recipe object
-                recipe = gson.fromJson(FileHandling.readFileToString(baseFilePath + recipeId + ".json", context), Recipe.class);
+                recipe = gson.fromJson(FileHandling.readFileToString(recipeId + ".json", context), Recipe.class);
             } else { // If the recipe didn't exist, then throw an exception. This will be immediately managed by the catch clause
                 throw new FileNotFoundException("Requested recipe ID: " + recipeId + " not found");
             }
@@ -103,7 +103,7 @@ public class RecipeLoader {
 
         try {
             // Get every recipe file path in array
-            String[] recipePaths = getRecipePaths(false);
+            String[] recipePaths = getRecipePaths(true);
             recipes = new Recipe[recipePaths.length];
 
             for (int i = 0; i < recipes.length; i++) {

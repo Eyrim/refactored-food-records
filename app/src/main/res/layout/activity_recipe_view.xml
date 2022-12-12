@@ -3,29 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#372A39">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gridViewRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recipe_desc"
+        app:layout_constraintStart_toStartOf="@+id/recipe_desc"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_desc" />
 
     <TextView
-        android:id="@+id/record_name"
-        android:layout_width="356dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:fontFamily="monospace"
+        android:id="@+id/recipe_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="record name" />
+        tools:text="recipe title" />
 
     <TextView
-        android:id="@+id/record_desc"
-        android:layout_width="356dp"
-        android:layout_height="29dp"
+        android:id="@+id/recipe_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:fontFamily="monospace"
-        app:layout_constraintEnd_toEndOf="@+id/record_name"
-        app:layout_constraintStart_toStartOf="@+id/record_name"
-        app:layout_constraintTop_toBottomOf="@+id/record_name"
-        tools:text="record desc" />
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/recipe_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recipe_title"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_title"
+        tools:text="recipe desc" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

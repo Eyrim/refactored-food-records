@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Users/gamin/AndroidStudioProjects/FoodRecords2/app/src/main/res/layout/activity_display_recipes.xml" value="0.22" />
         <entry key="..\:/Users/gamin/AndroidStudioProjects/FoodRecords2/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/gamin/AndroidStudioProjects/FoodRecords2/app/src/main/res/layout/activity_recipe_view.xml" value="0.24407894736842106" />
+        <entry key="..\:/Users/gamin/AndroidStudioProjects/FoodRecords2/app/src/main/res/layout/activity_recipe_view.xml" value="0.33" />
+        <entry key="..\:/Users/gamin/AndroidStudioProjects/FoodRecords2/app/src/main/res/layout/ingredient_border.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/gamin/AndroidStudioProjects/FoodRecords2/app/src/main/res/layout/ingredient_row.xml" value="0.38645833333333335" />
         <entry key="..\:/Users/gamin/AndroidStudioProjects/FoodRecords2/app/src/main/res/layout/record_row.xml" value="0.33" />
         <entry key="..\:/Users/gamin/AndroidStudioProjects/FoodRecords2/app/src/main/res/layout/record_row_old.xml" value="0.33695652173913043" />
       </map>
