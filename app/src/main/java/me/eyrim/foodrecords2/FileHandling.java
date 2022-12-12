@@ -5,6 +5,7 @@ import android.content.Context;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.util.Scanner;
 
 public class FileHandling {
@@ -23,7 +24,7 @@ public class FileHandling {
             return "";
         }*/
 
-        try (FileInputStream fis = context.openFileInput("0.json")) {
+        /*try (FileInputStream fis = context.openFileInput("0.json")) {
             int currentByte;
             StringBuilder file = new StringBuilder();
 
@@ -33,8 +34,20 @@ public class FileHandling {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }*/
+
+        StringBuilder readData = new StringBuilder();
+        int currentByte;
+
+        try (FileInputStream fis = context.openFileInput("0.json")) {
+            // Read the next byte and append it to the stringbuilder if it isn't EOF
+            while ((currentByte = fis.read()) != -1) {
+                readData.append((char) currentByte);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
-        return filePath.toString();
+        return readData.toString();
     }
 }
