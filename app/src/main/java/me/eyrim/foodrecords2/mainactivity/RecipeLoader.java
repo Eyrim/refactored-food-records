@@ -58,25 +58,23 @@ public class RecipeLoader {
     private static void insertTestFiles(Context context) {
         String[] json = new String[] {
                 "{\n" +
-                        "\t\"recipe_name\": \"My Test Recipe 1\",\n" +
+                        "\t\"recipe_name\": \"My Test Recipe 1 Updated\",\n" +
                         "\t\"recipe_id\": \"0\",\n" +
-                        "\t\"recipe_desc\": \"This is a test description for My Test Recipe 1\",\n" +
-                        "\t\"ingredients\": [\n" +
-                        "\t\t\"Tomato\",\n" +
-                        "\t\t\"Carrot\"\n" +
+                        "\t\"recipe_desc\": \"This is a test desc for my test recipe 1 updated\",\n" +
+                        "\t\"ingredients\": [{\n" +
+                        "\t\t\t\"ingredient_name\": \"Tomato\",\n" +
+                        "\t\t\t\"ingredient_drawable_tag\": 1234034598\n" +
+                        "\t\t},\n" +
+                        "\t\t{\n" +
+                        "\t\t\t\"ingredient_name\": \"Pepper\",\n" +
+                        "\t\t\t\"ingredient_drawable_tag\": 79827392\n" +
+                        "\t\t}\n" +
                         "\t]\n" +
-                "}",
-                "{\n" +
-                        "\t\"recipe_name\": \"My Test Recipe 2\",\n" +
-                        "\t\"recipe_id\": \"1\",\n" +
-                        "\t\"recipe_desc\": \"aaaaaaaaaaaaaaaaa\",\n" +
-                        "\t\"ingredients\": [\n" +
-                        "\t\t\"Tomato\",\n" +
-                        "\t\t\"Carrot\",\n" +
-                        "\t\t\"Nightmares\"\n" +
-                        "\t]\n" +
-                "}"
+                        "}"
         };
+
+        Gson gson = new GsonBuilder().create();
+        Recipe recipe = gson.fromJson(json[0], Recipe.class);
 
         try (FileOutputStream fos = context.openFileOutput("0.json", Context.MODE_PRIVATE)) {
             fos.write(json[0].getBytes());
@@ -84,11 +82,11 @@ public class RecipeLoader {
             e.printStackTrace();
         }
 
-        try (FileOutputStream fos = context.openFileOutput("1.json", Context.MODE_PRIVATE)) {
+        /*try (FileOutputStream fos = context.openFileOutput("1.json", Context.MODE_PRIVATE)) {
             fos.write(json[1].getBytes());
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     /**

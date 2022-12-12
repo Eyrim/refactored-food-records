@@ -8,7 +8,7 @@ public class Recipe {
     @SerializedName("recipe_desc")
     private String recipeDesc;
     @SerializedName("ingredients")
-    private String[] ingredients; // TODO: 24/10/2022 Make this a data class itself, and allow caching so the user doesn't have to input the image and stuff every time
+    private Ingredient[] ingredients; // TODO: 24/10/2022 Make this a data class itself, and allow caching so the user doesn't have to input the image and stuff every time
     @SerializedName("recipe_id")
     private String recipeId;
 
@@ -20,7 +20,7 @@ public class Recipe {
         return this.recipeDesc;
     }
 
-    public String[] getIngredients() {
+    public Ingredient[] getIngredients() {
         return this.ingredients;
     }
 
